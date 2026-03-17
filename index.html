@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Searcher</title>
+    <link rel="icon" type="image/png" href="/images/geralt-icon-1243690_1280.png">
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+    <header>
+        <div class="logoBlock">
+            <img src="/images/geralt-icon-1243690_1280.png" alt="logo" id="logo">
+            <h1>Movie Searcher</h1>
+        </div>
+
+
+        <div class="searchBlock">
+            <input type="search" id="search" placeholder="Search...">
+            <button id="searchBtn">Search</button>
+            <button id="saved">★ Favorites</button>
+        </div>
+    </header>
+
+
+    <main>
+        <p id="errorMsg"></p>
+
+        <div id="loader"></div>
+
+        <div class="moviesContainer">
+            <div id="backBtnBlock" style="display: none">
+                <button id="backBtn">← Back</button>
+            </div>
+            <div id="overlay"></div>
+            <div id="modal"></div>
+            <div id="popularMovies">
+
+            </div>
+        </div>
+    </main>
+
+
+    <script src="js/main.js" type="module"></script>
+</body>
+</html>
