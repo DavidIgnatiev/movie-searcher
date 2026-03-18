@@ -1,5 +1,5 @@
 import { getMovieById } from "./api.js";
-import { addToFavorites, removeFromFavorites, isFavorite } from "./favorites.js";
+import { isFavorite } from "./favorites.js";
 
 const popularMovies = document.getElementById("popularMovies");
 const errorMsg = document.getElementById("errorMsg");
